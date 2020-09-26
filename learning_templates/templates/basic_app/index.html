@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+    {% block body_block %}
+        <h1>Welcome to index !</h1> 
+        <h2> This is index.html page showing !</h2>
+        <!-- The below is example of template filtering -->
+        <!-- the cut method below is custom method written by sajid which can be seen in 
+        templatetags directory my_extras.py file -->
+        {{ text|cut:'world' }} 
+        {{ number|add:"99" }}
+    {% endblock %}
+        
+    
